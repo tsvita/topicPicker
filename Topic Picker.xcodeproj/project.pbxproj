@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74573EA7198AF3E200CA308A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74573EA6198AF3E200CA308A /* Foundation.framework */; };
+		74573EA9198AF3E200CA308A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74573EA8198AF3E200CA308A /* CoreGraphics.framework */; };
+		74573EAB198AF3E200CA308A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74573EAA198AF3E200CA308A /* UIKit.framework */; };
+		74573EB1198AF3E200CA308A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74573EAF198AF3E200CA308A /* InfoPlist.strings */; };
+		74573EB3198AF3E200CA308A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74573EB2198AF3E200CA308A /* main.m */; };
+		74573EB7198AF3E200CA308A /* TPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74573EB6198AF3E200CA308A /* TPAppDelegate.m */; };
+		74573EBA198AF3E200CA308A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74573EB8198AF3E200CA308A /* Main.storyboard */; };
+		74573EBD198AF3E200CA308A /* TPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74573EBC198AF3E200CA308A /* TPViewController.m */; };
+		74573EBF198AF3E200CA308A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74573EBE198AF3E200CA308A /* Images.xcassets */; };
+		74573EC6198AF3E200CA308A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74573EC5198AF3E200CA308A /* XCTest.framework */; };
+		74573EC7198AF3E200CA308A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74573EA6198AF3E200CA308A /* Foundation.framework */; };
+		74573EC8198AF3E200CA308A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74573EAA198AF3E200CA308A /* UIKit.framework */; };
+		74573ED0198AF3E200CA308A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74573ECE198AF3E200CA308A /* InfoPlist.strings */; };
+		74573ED2198AF3E200CA308A /* Topic_PickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74573ED1198AF3E200CA308A /* Topic_PickerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74573EC9198AF3E200CA308A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74573E9B198AF3E200CA308A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74573EA2198AF3E200CA308A;
+			remoteInfo = "Topic Picker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		74573EA3198AF3E200CA308A /* Topic Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Topic Picker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74573EA6198AF3E200CA308A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		74573EA8198AF3E200CA308A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		74573EAA198AF3E200CA308A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		74573EAE198AF3E200CA308A /* Topic Picker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Topic Picker-Info.plist"; sourceTree = "<group>"; };
+		74573EB0198AF3E200CA308A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		74573EB2198AF3E200CA308A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		74573EB4198AF3E200CA308A /* Topic Picker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Topic Picker-Prefix.pch"; sourceTree = "<group>"; };
+		74573EB5198AF3E200CA308A /* TPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPAppDelegate.h; sourceTree = "<group>"; };
+		74573EB6198AF3E200CA308A /* TPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPAppDelegate.m; sourceTree = "<group>"; };
+		74573EB9198AF3E200CA308A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74573EBB198AF3E200CA308A /* TPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPViewController.h; sourceTree = "<group>"; };
+		74573EBC198AF3E200CA308A /* TPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPViewController.m; sourceTree = "<group>"; };
+		74573EBE198AF3E200CA308A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		74573EC4198AF3E200CA308A /* Topic PickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Topic PickerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74573EC5198AF3E200CA308A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		74573ECD198AF3E200CA308A /* Topic PickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Topic PickerTests-Info.plist"; sourceTree = "<group>"; };
+		74573ECF198AF3E200CA308A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		74573ED1198AF3E200CA308A /* Topic_PickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Topic_PickerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74573EA0198AF3E200CA308A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74573EA9198AF3E200CA308A /* CoreGraphics.framework in Frameworks */,
+				74573EAB198AF3E200CA308A /* UIKit.framework in Frameworks */,
+				74573EA7198AF3E200CA308A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74573EC1198AF3E200CA308A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74573EC6198AF3E200CA308A /* XCTest.framework in Frameworks */,
+				74573EC8198AF3E200CA308A /* UIKit.framework in Frameworks */,
+				74573EC7198AF3E200CA308A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74573E9A198AF3E200CA308A = {
+			isa = PBXGroup;
+			children = (
+				74573EAC198AF3E200CA308A /* Topic Picker */,
+				74573ECB198AF3E200CA308A /* Topic PickerTests */,
+				74573EA5198AF3E200CA308A /* Frameworks */,
+				74573EA4198AF3E200CA308A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74573EA4198AF3E200CA308A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74573EA3198AF3E200CA308A /* Topic Picker.app */,
+				74573EC4198AF3E200CA308A /* Topic PickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74573EA5198AF3E200CA308A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74573EA6198AF3E200CA308A /* Foundation.framework */,
+				74573EA8198AF3E200CA308A /* CoreGraphics.framework */,
+				74573EAA198AF3E200CA308A /* UIKit.framework */,
+				74573EC5198AF3E200CA308A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74573EAC198AF3E200CA308A /* Topic Picker */ = {
+			isa = PBXGroup;
+			children = (
+				74573EB5198AF3E200CA308A /* TPAppDelegate.h */,
+				74573EB6198AF3E200CA308A /* TPAppDelegate.m */,
+				74573EB8198AF3E200CA308A /* Main.storyboard */,
+				74573EBB198AF3E200CA308A /* TPViewController.h */,
+				74573EBC198AF3E200CA308A /* TPViewController.m */,
+				74573EBE198AF3E200CA308A /* Images.xcassets */,
+				74573EAD198AF3E200CA308A /* Supporting Files */,
+			);
+			path = "Topic Picker";
+			sourceTree = "<group>";
+		};
+		74573EAD198AF3E200CA308A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74573EAE198AF3E200CA308A /* Topic Picker-Info.plist */,
+				74573EAF198AF3E200CA308A /* InfoPlist.strings */,
+				74573EB2198AF3E200CA308A /* main.m */,
+				74573EB4198AF3E200CA308A /* Topic Picker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74573ECB198AF3E200CA308A /* Topic PickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				74573ED1198AF3E200CA308A /* Topic_PickerTests.m */,
+				74573ECC198AF3E200CA308A /* Supporting Files */,
+			);
+			path = "Topic PickerTests";
+			sourceTree = "<group>";
+		};
+		74573ECC198AF3E200CA308A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74573ECD198AF3E200CA308A /* Topic PickerTests-Info.plist */,
+				74573ECE198AF3E200CA308A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74573EA2198AF3E200CA308A /* Topic Picker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74573ED5198AF3E200CA308A /* Build configuration list for PBXNativeTarget "Topic Picker" */;
+			buildPhases = (
+				74573E9F198AF3E200CA308A /* Sources */,
+				74573EA0198AF3E200CA308A /* Frameworks */,
+				74573EA1198AF3E200CA308A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Topic Picker";
+			productName = "Topic Picker";
+			productReference = 74573EA3198AF3E200CA308A /* Topic Picker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74573EC3198AF3E200CA308A /* Topic PickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74573ED8198AF3E200CA308A /* Build configuration list for PBXNativeTarget "Topic PickerTests" */;
+			buildPhases = (
+				74573EC0198AF3E200CA308A /* Sources */,
+				74573EC1198AF3E200CA308A /* Frameworks */,
+				74573EC2198AF3E200CA308A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74573ECA198AF3E200CA308A /* PBXTargetDependency */,
+			);
+			name = "Topic PickerTests";
+			productName = "Topic PickerTests";
+			productReference = 74573EC4198AF3E200CA308A /* Topic PickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74573E9B198AF3E200CA308A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Tsvi Tannin";
+				TargetAttributes = {
+					74573EC3198AF3E200CA308A = {
+						TestTargetID = 74573EA2198AF3E200CA308A;
+					};
+				};
+			};
+			buildConfigurationList = 74573E9E198AF3E200CA308A /* Build configuration list for PBXProject "Topic Picker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74573E9A198AF3E200CA308A;
+			productRefGroup = 74573EA4198AF3E200CA308A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74573EA2198AF3E200CA308A /* Topic Picker */,
+				74573EC3198AF3E200CA308A /* Topic PickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74573EA1198AF3E200CA308A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74573EBF198AF3E200CA308A /* Images.xcassets in Resources */,
+				74573EB1198AF3E200CA308A /* InfoPlist.strings in Resources */,
+				74573EBA198AF3E200CA308A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74573EC2198AF3E200CA308A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74573ED0198AF3E200CA308A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74573E9F198AF3E200CA308A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74573EBD198AF3E200CA308A /* TPViewController.m in Sources */,
+				74573EB7198AF3E200CA308A /* TPAppDelegate.m in Sources */,
+				74573EB3198AF3E200CA308A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74573EC0198AF3E200CA308A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74573ED2198AF3E200CA308A /* Topic_PickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74573ECA198AF3E200CA308A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74573EA2198AF3E200CA308A /* Topic Picker */;
+			targetProxy = 74573EC9198AF3E200CA308A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74573EAF198AF3E200CA308A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74573EB0198AF3E200CA308A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		74573EB8198AF3E200CA308A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74573EB9198AF3E200CA308A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74573ECE198AF3E200CA308A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74573ECF198AF3E200CA308A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74573ED3198AF3E200CA308A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		74573ED4198AF3E200CA308A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74573ED6198AF3E200CA308A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Topic Picker/Topic Picker-Prefix.pch";
+				INFOPLIST_FILE = "Topic Picker/Topic Picker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		74573ED7198AF3E200CA308A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Topic Picker/Topic Picker-Prefix.pch";
+				INFOPLIST_FILE = "Topic Picker/Topic Picker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		74573ED9198AF3E200CA308A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Topic Picker.app/Topic Picker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Topic Picker/Topic Picker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Topic PickerTests/Topic PickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		74573EDA198AF3E200CA308A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Topic Picker.app/Topic Picker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Topic Picker/Topic Picker-Prefix.pch";
+				INFOPLIST_FILE = "Topic PickerTests/Topic PickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74573E9E198AF3E200CA308A /* Build configuration list for PBXProject "Topic Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74573ED3198AF3E200CA308A /* Debug */,
+				74573ED4198AF3E200CA308A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74573ED5198AF3E200CA308A /* Build configuration list for PBXNativeTarget "Topic Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74573ED6198AF3E200CA308A /* Debug */,
+				74573ED7198AF3E200CA308A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		74573ED8198AF3E200CA308A /* Build configuration list for PBXNativeTarget "Topic PickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74573ED9198AF3E200CA308A /* Debug */,
+				74573EDA198AF3E200CA308A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74573E9B198AF3E200CA308A /* Project object */;
+}
