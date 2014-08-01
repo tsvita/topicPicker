@@ -7,18 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ArticleModel.h"
+@class Article;
 @protocol ArticleDelegate <NSObject>
 
-- (void)setBackGroundColorWith:(UIColor *)color;
-- (void)didLike;
-- (void)didDislike;
+- (void)didDislike:(Article *)article;
+- (void)didLike:(Article *)article;
 
 @end
 
 @interface Article : UIView
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *blurb;
-@property (nonatomic, copy) NSString *imageURL;
-@property (nonatomic, weak) id<ArticleDelegate> delegate;
+@property (nonatomic, strong) ArticleModel *model;
+@property (nonatomic, weak) id<ArticleDelegate>delegate;
 @end

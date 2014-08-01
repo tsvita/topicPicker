@@ -13,6 +13,9 @@
 @property (nonatomic, strong) UILabel *blurbView;
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIView *containerView;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *blurb;
+@property (nonatomic, copy) NSURL *imageURL;
 @end
 @implementation Article
 
@@ -20,14 +23,14 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor= [UIColor redColor];
+        self.backgroundColor= [UIColor whiteColor];
     }
     return self;
 }
 
 - (void)setImageURL:(NSString *)imageURL
 {
-    NSURL *source = [[NSURL alloc]initWithString:imageURL];
+    NSURL *source = imageURL;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         NSData *imageData = [NSData dataWithContentsOfURL:source];
         
@@ -37,7 +40,15 @@
         });
     });
 }
-
+- (void)setModel:(ArticleModel *)model
+{
+    _model = model;
+    self.title = model.title;
+    self.blurb = model.blurb;
+    self.imageURL = model.imageURL;
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
 - (void)layoutSubviews
 {
     CGFloat originY = 0;
@@ -50,6 +61,7 @@
     }
     if (!self.imageView) {
         self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, originY, 300, 150)];
+        self.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self.containerView addSubview:self.imageView];
     }
     originY += self.imageView.frame.size.height;
@@ -76,20 +88,35 @@
     CGPoint translation = [pan translationInView:self];
     pan.view.center = CGPointMake(pan.view.center.x, pan.view.center.y + translation.y);
     [pan setTranslation:CGPointMake(0, 0) inView:self];
-    NSLog(@"Velocity: %f", [pan velocityInView:self].y);
-    NSLog(@"Y: %f", self.containerView.frame.origin.y);
-    if ([pan velocityInView:self].y < -1000) [self flyOff:pan];
-    if (pan.state == UIGestureRecognizerStateEnded && self.containerView.frame.origin.y <70) [self flyOff:pan];
+    if ([pan velocityInView:self].y*[pan velocityInView:self].y > 2250000 && pan.state == UIGestureRecognizerStateEnded) {
+        [self flyOff:pan];
+    } else if (pan.state == UIGestureRecognizerStateEnded) {
+        [UIView animateWithDuration:.25 animations:^{
+            [self.containerView setFrame:CGRectMake(10, self.bounds.size.height/4, self.bounds.size.width-20, self.containerView.frame.size.height)];
+                                                    }];
+    }
 }
 
 - (void)flyOff:(UIPanGestureRecognizer *)pan
 {
     [self.containerView removeGestureRecognizer:pan];
-    NSTimeInterval interval = self.containerView.frame.origin.y/[pan velocityInView:self].y;
+    NSTimeInterval interval;
+    CGFloat finalY;
+    BOOL up = YES;
+    if ([pan velocityInView:self].y < 0) {
+        interval = self.containerView.frame.origin.y/[pan velocityInView:self].y;
+        finalY = -self.containerView.frame.size.height;
+    } else {
+        up = NO;
+        interval = (self.superview.bounds.size.height-CGRectGetMinY(self.containerView.frame))/[pan velocityInView:self].y;
+        finalY = self.bounds.size.height;
+    }
     [UIView animateWithDuration:interval animations:^{
-        [self.containerView setFrame:CGRectMake(10, -self.containerView.frame.size.height, self.containerView.frame.size.width, self.containerView.frame.size.height)];
+        [self.containerView setFrame:CGRectMake(10, finalY, self.containerView.frame.size.width, self.containerView.frame.size.height)];
     } completion:^(BOOL finished) {
         self.containerView = nil;
+        if (up) [self.delegate didLike:self];
+        else [self.delegate didDislike:self];
     }];
     
 }
