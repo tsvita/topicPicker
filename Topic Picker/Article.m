@@ -68,18 +68,22 @@
         [self addSubview:self.containerView];
     }
     if (!self.imageView) {
-        self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, originY, 300, 150)];
+        self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, originY, self.bounds.size.width-20, 200)];
         self.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self.containerView addSubview:self.imageView];
     }
     originY += self.imageView.frame.size.height;
     if (!self.titleLabel) {
-        self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, originY, 300, 40)];
-        self.titleLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Regular" size:24.0];
+        self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, originY-150, self.imageView.bounds.size.width-60, 40)];
+        self.titleLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Regular" size:18.0];
         self.titleLabel.text = self.title;
+        self.titleLabel.backgroundColor = [UIColor grayColor];
+        self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        self.titleLabel.numberOfLines = 0;
+        self.titleLabel.textColor = [UIColor whiteColor];
+        [self.titleLabel sizeToFit];
         [self.containerView addSubview:self.titleLabel];
     }
-    originY += self.titleLabel.frame.size.height;
     if (!self.blurbView) {
         self.blurbView = [[UILabel alloc] initWithFrame:CGRectMake(0, originY, 300, 100)];
         self.blurbView.text = self.blurb;
