@@ -9,8 +9,6 @@
 #import "TPViewController.h"
 #import "Article.h"
 #import "Communicator.h"
-#import "FinalStateViewController.h"
-#import "CollectionViewLayout.h"
 @interface TPViewController () <ArticleDelegate, CommunicatorDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) Article *topArticle;
 @property (nonatomic, strong) Article *bottomArticle;

@@ -31,7 +31,7 @@
 
 - (void)setImageURL:(NSString *)imageURL
 {
-    NSURL *source = imageURL;
+    NSURL *source = [NSURL URLWithString:imageURL];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         NSData *imageData = [NSData dataWithContentsOfURL:source];
         

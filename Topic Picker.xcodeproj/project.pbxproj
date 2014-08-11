@@ -24,10 +24,6 @@
 		74573EDD198AF50300CA308A /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 74573EDC198AF50300CA308A /* Article.m */; };
 		74573EE6198BCCC500CA308A /* Communicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 74573EE5198BCCC500CA308A /* Communicator.m */; };
 		74573EE9198BE3E400CA308A /* ArticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74573EE8198BE3E400CA308A /* ArticleModel.m */; };
-		74573EEF198BFB3300CA308A /* FinalStateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74573EEE198BFB3300CA308A /* FinalStateViewController.m */; };
-		74573EF2198BFC0100CA308A /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74573EF1198BFC0100CA308A /* Cell.m */; };
-		74573EF8198BFCE200CA308A /* CollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 74573EF7198BFCE200CA308A /* CollectionViewLayout.m */; };
-		74B7E62A19997069003BE043 /* TopicsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B7E62919997069003BE043 /* TopicsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,14 +62,6 @@
 		74573EE5198BCCC500CA308A /* Communicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Communicator.m; sourceTree = "<group>"; };
 		74573EE7198BE3E400CA308A /* ArticleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleModel.h; sourceTree = "<group>"; };
 		74573EE8198BE3E400CA308A /* ArticleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleModel.m; sourceTree = "<group>"; };
-		74573EED198BFB3300CA308A /* FinalStateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalStateViewController.h; sourceTree = "<group>"; };
-		74573EEE198BFB3300CA308A /* FinalStateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalStateViewController.m; sourceTree = "<group>"; };
-		74573EF0198BFC0100CA308A /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
-		74573EF1198BFC0100CA308A /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
-		74573EF6198BFCE200CA308A /* CollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewLayout.h; sourceTree = "<group>"; };
-		74573EF7198BFCE200CA308A /* CollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewLayout.m; sourceTree = "<group>"; };
-		74B7E62819997069003BE043 /* TopicsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicsTableViewController.h; sourceTree = "<group>"; };
-		74B7E62919997069003BE043 /* TopicsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,14 +91,6 @@
 		74573E9A198AF3E200CA308A = {
 			isa = PBXGroup;
 			children = (
-				74B7E62819997069003BE043 /* TopicsTableViewController.h */,
-				74B7E62919997069003BE043 /* TopicsTableViewController.m */,
-				74573EF6198BFCE200CA308A /* CollectionViewLayout.h */,
-				74573EF7198BFCE200CA308A /* CollectionViewLayout.m */,
-				74573EED198BFB3300CA308A /* FinalStateViewController.h */,
-				74573EEE198BFB3300CA308A /* FinalStateViewController.m */,
-				74573EF0198BFC0100CA308A /* Cell.h */,
-				74573EF1198BFC0100CA308A /* Cell.m */,
 				74573EAC198AF3E200CA308A /* Topic Picker */,
 				74573ECB198AF3E200CA308A /* Topic PickerTests */,
 				74573EA5198AF3E200CA308A /* Frameworks */,
@@ -289,15 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				74573EDD198AF50300CA308A /* Article.m in Sources */,
-				74573EF8198BFCE200CA308A /* CollectionViewLayout.m in Sources */,
-				74573EF2198BFC0100CA308A /* Cell.m in Sources */,
-				74573EEF198BFB3300CA308A /* FinalStateViewController.m in Sources */,
 				74573EBD198AF3E200CA308A /* TPViewController.m in Sources */,
 				74573EE9198BE3E400CA308A /* ArticleModel.m in Sources */,
 				74573EB7198AF3E200CA308A /* TPAppDelegate.m in Sources */,
 				74573EB3198AF3E200CA308A /* main.m in Sources */,
 				74573EE6198BCCC500CA308A /* Communicator.m in Sources */,
-				74B7E62A19997069003BE043 /* TopicsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
