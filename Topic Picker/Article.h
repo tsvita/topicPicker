@@ -19,4 +19,5 @@
 @interface Article : UIView
 @property (nonatomic, strong) ArticleModel *model;
 @property (nonatomic, weak) id<ArticleDelegate>delegate;
+- (instancetype)initAsStatic:(BOOL)staticView withFrame:(CGRect)frame;
 @end

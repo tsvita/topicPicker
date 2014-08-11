@@ -47,7 +47,7 @@
 
 - (void)getNextPayloadForUser:(NSString *)user WithPreferences:(NSData *)data
 {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"104.131.218.141:5000/recommended/%@", user]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://yoren01.eng.live.flipboard.com:5000/recommended/%@", user]];
 //    NSString *post = [NSString stringWithFormat:@"topic_results=%@",pref]; // change to handle shit
     NSData *postData = data;
 //    NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[post length]];

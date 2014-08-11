@@ -16,14 +16,15 @@
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *blurb;
 @property (nonatomic, copy) NSURL *imageURL;
+@property (nonatomic, assign) BOOL staticView;
 @end
 @implementation Article
 
-- (id)initWithFrame:(CGRect)frame
+- (instancetype)initAsStatic:(BOOL)staticView withFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor= [UIColor whiteColor];
+        self.staticView = staticView;
     }
     return self;
 }
@@ -46,17 +47,24 @@
     self.title = model.title;
     self.blurb = model.blurb;
     self.imageURL = model.imageURL;
+    self.containerView = nil;
+    self.imageView = nil;
+    self.titleLabel = nil;
+    self.blurbView = nil;
     [self setNeedsLayout];
     [self layoutIfNeeded];
 }
+
 - (void)layoutSubviews
 {
     CGFloat originY = 0;
     if (!self.containerView) {
         self.containerView = [[UIView alloc] init];
-        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
-        [self.containerView addGestureRecognizer:pan];
         self.containerView.backgroundColor = [UIColor redColor];
+        if (!self.staticView) {
+            UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+            [self.containerView addGestureRecognizer:pan];
+        }
         [self addSubview:self.containerView];
     }
     if (!self.imageView) {

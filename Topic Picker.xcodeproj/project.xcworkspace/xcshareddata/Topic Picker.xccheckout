@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EA6F3953-D97B-4A3C-B889-3D141D9BDC0E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Topic Picker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7438F9EA-CD91-45D6-A415-B4DC6E97D2C0</key>
+		<string>ssh://github.com/tsvita/topicPicker.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Topic Picker.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7438F9EA-CD91-45D6-A415-B4DC6E97D2C0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/tsvita/topicPicker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7438F9EA-CD91-45D6-A415-B4DC6E97D2C0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7438F9EA-CD91-45D6-A415-B4DC6E97D2C0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Topic Picker</string>
+		</dict>
+	</array>
+</dict>
+</plist>
